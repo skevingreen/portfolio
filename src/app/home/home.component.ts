@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+interface Slide {
+  headline?: string;
+  src: string;
+}
+
+import { Component, ViewChild } from '@angular/core';
+import { CarouselComponent } from '../carousel/carousel.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ CarouselComponent ],
   template: `
-    <br><br><br><br>
+    <br /><br /><br /><br />
 
     <div class="home-container">
       <div class="intro">
@@ -15,7 +21,7 @@ import { Component } from '@angular/core';
         </h1>
       </div>
 
-      <br><br><br><br>
+      <br /><br /><br /><br />
 
       <div class="bucketList">
         <h3>My Bucket List</h3>
@@ -30,13 +36,39 @@ import { Component } from '@angular/core';
           <li>Ride a horse</li>
         </ul>
       </div>
+
+      <div class="picture-frame">
+        <app-carousel [slides]="slides"></app-carousel>
+      </div>
     </div>
   `,
   styles: [
     `
+      .picture-frame {
+        display: block;
+        height: 480px;
+        width: 640px;
+        padding: 2em;
+        margin-left: auto;
+        margin-right: auto;
+      }
     `
   ]
 })
 export class HomeComponent {
+  //@ViewChild(CarouselComponent, { static: true }) carousel: CarouselComponent;
+  slides: Slide[] = []
 
+  constructor () {
+    this.slides = [
+      { src: "/assets/map-with-american-flag-us-national-loyalty-day-celebration.jpg" },
+      { src: "/assets/digital-representation-europe-with-network-connections-lights-digital-europe-map.jpg" },
+      { src: "/assets/close-up-bass-guitar-hands-musician-process-playing.jpg" },
+      { src: "/assets/learn-spanish-language-online-education-concept.jpg" },
+      { src: "/assets/low-angle-view-people-paragliding-against-sky.jpg" },
+      { src: "/assets/arrangement-fishing-elements-outdoors.jpg" },
+      { src: "/assets/flat-lay-beer-mugs-bottle.jpg" },
+      { src: "/assets/horses-field.jpg" }
+    ]
+  }
 }
