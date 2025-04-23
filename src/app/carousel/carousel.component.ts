@@ -1,4 +1,11 @@
-// https://github.com/brampeirs/angular-carousel
+/*
+ * Student Name: Scott Green
+ * File Name: carousel.component.ts
+ * Date: April 20, 2025
+ * Purpose: Provide a carousel to display pictures
+ *
+ * Credit for carousel code goes to https://github.com/brampeirs/angular-carousel
+ */
 
 interface Slide {
   headline?: string;
@@ -139,12 +146,10 @@ export class CarouselComponent {
   onPreviousClick() {
     const previous = this.currentSlide - 1;
     this.currentSlide = previous < 0 ? this.slides.length - 1 : previous;
-    console.log("previous clicked, new current slide is: ", this.currentSlide);
   }
 
   onNextClick() {
     const next = this.currentSlide + 1;
     this.currentSlide = next === this.slides.length ? 0 : next;
-    console.log("next clicked, new current slide is: ", this.currentSlide);
   }
 }

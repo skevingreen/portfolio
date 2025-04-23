@@ -2,21 +2,24 @@
  * Student Name: Scott Green
  * File Name: styles.css
  * Date: April 20, 2025
+ * Purpose: Provide overarching styling rules
  */
 
 /* style reset rules */
+/*
 body, header, nav, main, section, footer, img, figure, figcaption, div, ul {
   margin:0;
   padding:0;
   border:0;
 }
+*/
 
 /* create a grid for the header with 1 row and three columns */
 .header-container {
   display: grid;
   grid-template-columns: auto auto auto;
   color: blue;
-  height: 50px;
+  height: 70px;
   margin-left: 20px;
 }
 
@@ -34,12 +37,12 @@ main {
 
 /*
 * https://stackoverflow.com/questions/206652/how-to-create-div-to-fill-all-space-between-header-and-footer-div
-* next three styles make the main content fill the screen between header and footer
+* next four styles make the main content fill the screen between header and footer
 */
 html, body, app-root {
   margin: 0;
-  height: 100%;
-  min-height: 100%;
+  height: 98%;
+  min-height: 98%;
 }
 
 body, app-root {
@@ -57,9 +60,21 @@ main {
 }
 
 /* font color in main paragraphs should be white */
-main p, h1, .bucketList {
+main p, h1 {
   color: white;
   text-align: center;
+}
+
+.bucketList {
+  color: white;
+  text-align: center;
+}
+
+/* https://www.w3schools.com/howto/howto_css_list_without_bullets.asp */
+.bucketList > ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
 }
 
 /* fix the footer at the bottom and span the screen horizontally */
@@ -73,10 +88,9 @@ footer {
   color: blue;
 }
 
-/* move the footer to the right a few pixels */
+/* move the footer text to the right a few pixels */
 footer p {
   margin-left: 20px;
 }
 
-/* */
 

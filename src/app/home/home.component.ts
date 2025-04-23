@@ -1,3 +1,12 @@
+/*
+ * Student Name: Scott Green
+ * File Name: carousel.component.ts
+ * Date: April 20, 2025
+ * Purpose: Provide a carousel to display pictures
+ *
+ * Credit for carousel code goes to https://github.com/brampeirs/angular-carousel
+ */
+
 interface Slide {
   headline?: string;
   src: string;
@@ -56,7 +65,6 @@ import { CarouselComponent } from '../carousel/carousel.component';
   ]
 })
 export class HomeComponent {
-  //@ViewChild(CarouselComponent, { static: true }) carousel: CarouselComponent;
   slides: Slide[] = []
 
   constructor () {
