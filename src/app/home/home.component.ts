@@ -8,7 +8,7 @@
  */
 
 interface Slide {
-  headline?: string;
+  alt: string;
   src: string;
 }
 
@@ -46,25 +46,21 @@ import { CarouselComponent } from '../carousel/carousel.component';
         </ul>
       </div>
 
-      <div class="picture-frame">
-        <app-carousel [slides]="slides"></app-carousel>
-      </div>
+      <app-carousel [slides]="slides"></app-carousel>
     </div>
   `,
   styles: [
     `
+      /*
       .picture-frame {
         display: block;
         height: 480px;
         width: 640px;
-        /*
-        width: auto;
-        height: auto;
-        */
         padding: 2em;
         margin-left: auto;
         margin-right: auto;
       }
+      */
     `
   ]
 })
@@ -73,14 +69,14 @@ export class HomeComponent {
 
   constructor () {
     this.slides = [
-      { src: "/assets/map-with-american-flag-us-national-loyalty-day-celebration.jpg" },
-      { src: "/assets/digital-representation-europe-with-network-connections-lights-digital-europe-map.jpg" },
-      { src: "/assets/close-up-bass-guitar-hands-musician-process-playing.jpg" },
-      { src: "/assets/learn-spanish-language-online-education-concept.jpg" },
-      { src: "/assets/low-angle-view-people-paragliding-against-sky.jpg" },
-      { src: "/assets/arrangement-fishing-elements-outdoors.jpg" },
-      { src: "/assets/flat-lay-beer-mugs-bottle.jpg" },
-      { src: "/assets/horses-field.jpg" }
+      { alt: "map of United States with U.S. flag overlaid on it", src: "/assets/map-with-american-flag-us-national-loyalty-day-celebration.jpg" },
+      { alt: "map of Europe as seen from space", src: "/assets/digital-representation-europe-with-network-connections-lights-digital-europe-map.jpg" },
+      { alt: "bass guitar", src: "/assets/close-up-bass-guitar-hands-musician-process-playing.jpg" },
+      { alt: "laptop with Spanish language learning software on screen", src: "/assets/learn-spanish-language-online-education-concept.jpg" },
+      { alt: "two people skydiving", src: "/assets/low-angle-view-people-paragliding-against-sky.jpg" },
+      { alt: "two fish caught from hole in ice", src: "/assets/arrangement-fishing-elements-outdoors.jpg" },
+      { alt: "two mugs and a bottle of beer surrounded by hops and barley", src: "/assets/flat-lay-beer-mugs-bottle.jpg" },
+      { alt: "white horse with saddle in a field", src: "/assets/horses-field.jpg" }
     ]
   }
 }

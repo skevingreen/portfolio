@@ -7,11 +7,6 @@
  * Credit for carousel code goes to https://github.com/brampeirs/angular-carousel
  */
 
-interface Slide {
-  headline?: string;
-  src: string;
-}
-
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -27,6 +22,7 @@ import { CommonModule } from '@angular/common';
           *ngIf="i === currentSlide"
           [src]="slide.src"
           class="slide"
+          [alt]="slide.alt"
         />
       </ng-container>
 
@@ -51,10 +47,12 @@ import { CommonModule } from '@angular/common';
 
     .carousel {
       position: relative;
-      height: 100%;
-      width: 100%;
+      height: 480px;
+      width: 640px;
       overflow: hidden;
       border-radius: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .slide {
@@ -68,9 +66,11 @@ import { CommonModule } from '@angular/common';
       border-radius: 0.5em;
     }
 
+    /*
     .slide:hover {
       transform: scale(1.025);
     }
+    */
 
     /*
      * Next and Prev buttons
@@ -130,17 +130,6 @@ export class CarouselComponent {
   currentSlide = 0;
 
   constructor() {
-
-    this.slides = [
-      { src: "/assets/map-with-american-flag-us-national-loyalty-day-celebration.jpg" },
-      { src: "/assets/digital-representation-europe-with-network-connections-lights-digital-europe-map.jpg" },
-      { src: "/assets/close-up-bass-guitar-hands-musician-process-playing.jpg" },
-      { src: "/assets/learn-spanish-language-online-education-concept.jpg" },
-      { src: "/assets/low-angle-view-people-paragliding-against-sky.jpg" },
-      { src: "/assets/arrangement-fishing-elements-outdoors.jpg" },
-      { src: "/assets/flat-lay-beer-mugs-bottle.jpg" },
-      { src: "/assets/horses-field.jpg" }
-    ]
   }
 
   onPreviousClick() {
