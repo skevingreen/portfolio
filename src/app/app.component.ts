@@ -1,3 +1,10 @@
+/*
+ * Student Name: Scott Green
+ * File Name: carousel.component.ts
+ * Date: April 20, 2025
+ * Purpose: Provide common site structure
+ */
+
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 

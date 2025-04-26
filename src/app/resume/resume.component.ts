@@ -81,6 +81,10 @@ import { Component } from '@angular/core';
     .resume-container h2, h3, p, li {
       color: white;
       text-align: left;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
     }
 
     .resume-header p, h1 {

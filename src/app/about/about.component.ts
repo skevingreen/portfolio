@@ -1,3 +1,10 @@
+/*
+ * Student Name: Scott Green
+ * File Name: about.component.ts
+ * Date: April 20, 2025
+ * Purpose: Provide a a short biography and picture
+ */
+
 import { Component } from '@angular/core';
 
 @Component({

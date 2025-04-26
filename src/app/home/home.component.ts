@@ -57,6 +57,10 @@ import { CarouselComponent } from '../carousel/carousel.component';
         display: block;
         height: 480px;
         width: 640px;
+        /*
+        width: auto;
+        height: auto;
+        */
         padding: 2em;
         margin-left: auto;
         margin-right: auto;
