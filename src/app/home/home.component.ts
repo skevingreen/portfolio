@@ -30,7 +30,7 @@ import { CarouselComponent } from '../carousel/carousel.component';
         </h1>
       </div>
 
-      <br /><br /><br /><br />
+      <br /><br />
 
       <div class="bucketList">
         <h3>My Bucket List</h3>
@@ -51,16 +51,6 @@ import { CarouselComponent } from '../carousel/carousel.component';
   `,
   styles: [
     `
-      /*
-      .picture-frame {
-        display: block;
-        height: 480px;
-        width: 640px;
-        padding: 2em;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      */
     `
   ]
 })

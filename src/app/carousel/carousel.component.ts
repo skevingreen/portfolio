@@ -47,8 +47,8 @@ import { CommonModule } from '@angular/common';
 
     .carousel {
       position: relative;
-      height: 480px;
-      width: 640px;
+      height: 240px;
+      width: 320px;
       overflow: hidden;
       border-radius: 0.5em;
       margin-left: auto;

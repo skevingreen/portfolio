@@ -85,11 +85,13 @@ import { Component } from '@angular/core';
       margin-left: auto;
       margin-right: auto;
       width: 50%;
+      font-family: "Tuffy", sans-serif;
     }
 
     .resume-header p, h1 {
       text-align: center;
       color: white;
+      font-family: "Tuffy", sans-serif;
     }
 
     a {

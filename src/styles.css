@@ -52,6 +52,7 @@ body, app-root {
 
 header, footer {
   flex: none;
+  font-family: "Tuffy", sans-serif;
 }
 
 main {
@@ -59,15 +60,17 @@ main {
   flex: auto;
 }
 
-/* font color in main paragraphs should be white */
+/* font color in main paragraphs should be white and centered by default */
 main p, h1 {
   color: white;
   text-align: center;
+  font-family: "Tuffy", sans-serif;
 }
 
 .bucketList {
   color: white;
   text-align: center;
+  font-family: "Tuffy", sans-serif;
 }
 
 /* https://www.w3schools.com/howto/howto_css_list_without_bullets.asp */
