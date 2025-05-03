@@ -5,15 +5,6 @@
  * Purpose: Provide overarching styling rules
  */
 
-/* style reset rules */
-/*
-body, header, nav, main, section, footer, img, figure, figcaption, div, ul {
-  margin:0;
-  padding:0;
-  border:0;
-}
-*/
-
 /* create a grid for the header with 1 row and three columns */
 .header-container {
   display: grid;
@@ -36,9 +27,9 @@ main {
 }
 
 /*
-* https://stackoverflow.com/questions/206652/how-to-create-div-to-fill-all-space-between-header-and-footer-div
-* next four styles make the main content fill the screen between header and footer
-*/
+ * https://stackoverflow.com/questions/206652/how-to-create-div-to-fill-all-space-between-header-and-footer-div
+ * next four styles make the main content fill the screen between header and footer
+ */
 html, body, app-root {
   margin: 0;
   height: 98%;
@@ -95,5 +86,3 @@ footer {
 footer p {
   margin-left: 20px;
 }
-
-

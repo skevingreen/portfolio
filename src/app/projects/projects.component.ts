@@ -56,9 +56,17 @@ import { Component } from '@angular/core';
     }
 
     .project-item {
-      flex: 0 1 calc(33.33% - 20px);
+      flex: 0 0 calc(50% - 20px);
       margin: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media screen and (min-width: 1162px) {
+      .project-item {
+        flex: 0 0 calc(33.33% - 20px);
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
     }
 
     .card {

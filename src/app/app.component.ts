@@ -1,7 +1,7 @@
 /*
  * Student Name: Scott Green
- * File Name: carousel.component.ts
- * Date: April 20, 2025
+ * File Name: app.component.ts
+ * Date: May 3, 2025
  * Purpose: Provide common site structure
  */
 
@@ -22,7 +22,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
             <a routerLink="/about">About</a> |
             <a routerLink="/projects">Projects</a>
           </nav>
-          <p></p>
         </div>
       </header>
 
@@ -33,7 +32,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       </main>
 
       <footer>
-        <p>&copy; 2025 Scott Green</p>
+        <p>&copy; 2025 <a href="mailto:scgreen@my365.bellevue.edu">Scott Green</a></p>
       </footer>
   `,
   styles: [

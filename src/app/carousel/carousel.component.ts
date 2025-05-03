@@ -37,10 +37,7 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [
     `
-    /*
-     * Carousel
-     */
-
+    /* Carousel */
     :host {
       flex: 1;
     }
@@ -55,6 +52,18 @@ import { CommonModule } from '@angular/common';
       margin-right: auto;
     }
 
+    @media screen and (min-width: 1162px) {
+      .carousel {
+        position: relative;
+        height: 480px;
+        width: 640px;
+        overflow: hidden;
+        border-radius: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
     .slide {
       position: absolute;
       top: 0;
@@ -66,15 +75,7 @@ import { CommonModule } from '@angular/common';
       border-radius: 0.5em;
     }
 
-    /*
-    .slide:hover {
-      transform: scale(1.025);
-    }
-    */
-
-    /*
-     * Next and Prev buttons
-     */
+    /* Next and Prev buttons */
     .control {
       border: none;
       background-color: transparent;
