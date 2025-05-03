@@ -51,6 +51,10 @@ import { Component } from '@angular/core';
       padding: 0;
     }
 
+    .project-container li {
+      background-color: white;
+    }
+
     .project-item {
       flex: 0 1 calc(33.33% - 20px);
       margin: 10px;
@@ -69,7 +73,6 @@ import { Component } from '@angular/core';
       margin-bottom: 0;
       margin-top: 0;
     }
-
 
     .card h3 {
       margin-top: 35px;
@@ -130,7 +133,7 @@ export class ProjectsComponent {
         "name": "web-231",
         "description": "GitHub repository for web-231 Enterprise JavaScript I course.",
         "repositoryLink": "https://github.com/skevingreen/web-231",
-        "liveLink": "N/A",
+        "liveLink": "",
         "technologyList": "JavaScript, HTML, CSS",
         "learnings": "A basic introduction to JavaScript"
       },
@@ -138,7 +141,7 @@ export class ProjectsComponent {
         "name": "web-330",
         "description": "GitHub repository for web-330 Enterprise JavaScript II course.",
         "repositoryLink": "https://github.com/skevingreen/web-330",
-        "liveLink": "N/A",
+        "liveLink": "",
         "technologyList": "JavaScript, CSS, HTML",
         "learnings": "More advanced JavaScript concepts."
       },
@@ -146,7 +149,7 @@ export class ProjectsComponent {
         "name": "web-335",
         "description": "GitHub repository for web-335 NoSQL course.",
         "repositoryLink": "https://github.com/skevingreen/web-335",
-        "liveLink": "N/A",
+        "liveLink": "",
         "technologyList": "Python, JavaScript, MongoDB",
         "learnings": "This course taught us about NoSQL databases in general and MongoDB in particular."
       },
@@ -154,7 +157,7 @@ export class ProjectsComponent {
         "name": "web-340",
         "description": "GitHub repository for web-340 Node.js course.",
         "repositoryLink": "https://github.com/skevingreen/web-340",
-        "liveLink": "N/A",
+        "liveLink": "",
         "technologyList": "JavaScript, Node.js",
         "learnings": "A first foray into the world of Node.js and server side scripting with JavaScript."
       },
@@ -162,7 +165,7 @@ export class ProjectsComponent {
         "name": "web-420",
         "description": "GitHub repository for web-420 RESTful APIs course.",
         "repositoryLink": "https://github.com/skevingreen/web-420",
-        "liveLink": "N/A",
+        "liveLink": "",
         "technologyList": "JavaScript, Node.js, Express.js",
         "learnings": "Implementing REST APIs using JavaScript with Node.js and Express.js."
       },
@@ -170,7 +173,7 @@ export class ProjectsComponent {
         "name": "web-425",
         "description": "GitHub repository for web-425 Angular with TypeScript course.",
         "repositoryLink": "https://github.com/skevingreen/web-425",
-        "liveLink": "N/A",
+        "liveLink": "",
         "technologyList": "TypeScript, JavaScript, HTML, CSS, Angular",
         "learnings": "A focus on front-end development using Angular and TypeScript."
       }
