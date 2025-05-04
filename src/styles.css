@@ -1,11 +1,12 @@
 /*
  * Student Name: Scott Green
  * File Name: styles.css
- * Date: April 20, 2025
+ * Date: May 03, 2025
  * Purpose: Provide overarching styling rules
  */
 
 /* center the navigation horizontally */
+/* https://stackoverflow.com/questions/1776915/how-can-i-center-an-absolutely-positioned-element-in-a-div */
 .navbar {
   left: 0;
   right: 0;
