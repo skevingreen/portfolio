@@ -5,20 +5,22 @@
  * Purpose: Provide overarching styling rules
  */
 
-/* create a grid for the header with 1 row and three columns */
-.header-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  color: blue;
-  height: 70px;
-  margin-left: 20px;
-}
-
 /* center the navigation horizontally */
 .navbar {
-  justify-self: center;
-  align-self: center;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+  position: absolute;
 }
+
+.header-container {
+  display: flex;
+  color: blue;
+  margin-left: 20px;
+  align-items: center;
+}
+
 
 /* set the background image for main */
 main {
