@@ -73,6 +73,8 @@ import { CommonModule } from '@angular/common';
       object-fit: cover;
       transition: transform 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
       border-radius: 0.5em;
+      color: white;
+      font: 40px;
     }
 
     /* Next and Prev buttons */
