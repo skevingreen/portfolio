@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
       <div class="resume-header">
         <h1>Scott Green</h1>
         <p>E-mail: scgreen&#64;my365.bellevue.edu</p>
-        <a href="/assets/portfolio_resume.pdf" target="_blank">Download Resume</a>
+        <a href="assets/portfolio_resume.pdf" target="_blank">Download Resume</a>
       </div>
 
       <hr />

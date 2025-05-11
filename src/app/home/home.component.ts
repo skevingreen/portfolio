@@ -59,14 +59,14 @@ export class HomeComponent {
 
   constructor () {
     this.slides = [
-      { alt: "map of United States with U.S. flag overlaid on it", src: "/assets/map-with-american-flag-us-national-loyalty-day-celebration.jpg" },
-      { alt: "map of Europe as seen from space", src: "/assets/digital-representation-europe-with-network-connections-lights-digital-europe-map.jpg" },
-      { alt: "bass guitar", src: "/assets/close-up-bass-guitar-hands-musician-process-playing.jpg" },
-      { alt: "laptop with Spanish language learning software on screen", src: "/assets/learn-spanish-language-online-education-concept.jpg" },
-      { alt: "two people skydiving", src: "/assets/low-angle-view-people-paragliding-against-sky.jpg" },
-      { alt: "two fish caught from hole in ice", src: "/assets/arrangement-fishing-elements-outdoors.jpg" },
-      { alt: "two mugs and a bottle of beer surrounded by hops and barley", src: "/assets/flat-lay-beer-mugs-bottle.jpg" },
-      { alt: "white horse with saddle in a field", src: "/assets/horses-field.jpg" }
+      { alt: "map of United States with U.S. flag overlaid on it", src: "assets/map-with-american-flag-us-national-loyalty-day-celebration.jpg" },
+      { alt: "map of Europe as seen from space", src: "assets/digital-representation-europe-with-network-connections-lights-digital-europe-map.jpg" },
+      { alt: "bass guitar", src: "assets/close-up-bass-guitar-hands-musician-process-playing.jpg" },
+      { alt: "laptop with Spanish language learning software on screen", src: "assets/learn-spanish-language-online-education-concept.jpg" },
+      { alt: "two people skydiving", src: "assets/low-angle-view-people-paragliding-against-sky.jpg" },
+      { alt: "two fish caught from hole in ice", src: "assets/arrangement-fishing-elements-outdoors.jpg" },
+      { alt: "two mugs and a bottle of beer surrounded by hops and barley", src: "assets/flat-lay-beer-mugs-bottle.jpg" },
+      { alt: "white horse with saddle in a field", src: "assets/horses-field.jpg" }
     ]
   }
 }

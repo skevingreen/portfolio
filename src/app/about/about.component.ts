@@ -26,7 +26,7 @@ import { Component } from '@angular/core';
         Raspberry Pi and similar projects.
       </p>
 
-      <img src="/assets/scott_and_kelli.jpg" alt="Scott and Kelli Green at the Grand Canyon">
+      <img src="assets/scott_and_kelli.jpg" alt="Scott and Kelli Green at the Grand Canyon">
     </div>
   `,
   styles: `

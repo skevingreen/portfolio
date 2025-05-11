@@ -138,6 +138,22 @@ export class ProjectsComponent {
         "learnings": "A reinforcement of REST API concepts utilizing Express.js and Node.js."
       },
       {
+        "name": "Virtual Taco Stand",
+        "description": "An Angular single-page application for a taco stand's website (daily-specials.js should be running in Node for specials page).",
+        "repositoryLink": "https://github.com/skevingreen/virtual-taco-stand",
+        "liveLink": "https://skevingreen.github.io/virtual-taco-stand/",
+        "technologyList": "TypeScript, Angular",
+        "learnings": "Angular components/modules, routing, error handling, unit testing, forms: template driven, reactive, dynamic, Input/Output, HTTP Client"
+      },
+      {
+        "name": "RPG Character Builder",
+        "description": "An Angular SPA for an RPG character builder website (character-factions.js should be running in Node for character-faction page).",
+        "repositoryLink": "https://github.com/skevingreen/rpg-character-builder",
+        "liveLink": "https://skevingreen.github.io/rpg-character-builder/",
+        "technologyList": "TypeScript, Angular",
+        "learnings": "Angular components/modules, routing, error handling, unit testing, forms: template driven, reactive, dynamic, Input/Output, HTTP Client"
+      },
+      {
         "name": "web-231",
         "description": "GitHub repository for web-231 Enterprise JavaScript I course.",
         "repositoryLink": "https://github.com/skevingreen/web-231",
