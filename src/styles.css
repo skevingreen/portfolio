@@ -8,21 +8,21 @@
 /* center the navigation horizontally */
 /* https://stackoverflow.com/questions/1776915/how-can-i-center-an-absolutely-positioned-element-in-a-div */
 .navbar {
-  right: 5px;
+  right: 15px;
   margin-inline: auto;
   width: fit-content;
   position: absolute;
 }
 
-  @media screen and (min-width: 1162px) {
-    .navbar {
-      left: 0;
-      right: 0;
-      margin-inline: auto;
-      width: fit-content;
-      position: absolute;
-    }
+@media screen and (min-width: 1162px) {
+  .navbar {
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+    position: absolute;
   }
+}
 
 .header-container {
   display: flex;
@@ -36,6 +36,7 @@
 main {
   background-image: url('../public/assets/1014.jpg');
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 /*
