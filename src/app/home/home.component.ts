@@ -34,6 +34,7 @@ import { CarouselComponent } from '../carousel/carousel.component';
 
       <div class="bucketList">
         <h3>My Bucket List</h3>
+        <p><em>(Click the image to pause/play slideshow)</em></p>
         <ul>
           <li>Visit all 50 states</li>
           <li>Travel to Europe</li>
@@ -51,6 +52,13 @@ import { CarouselComponent } from '../carousel/carousel.component';
   `,
   styles: [
     `
+    .bucketList h3 {
+      margin-bottom: 0;
+    }
+
+    .bucketList p {
+      margin-top: 0;
+    }
     `
   ]
 })

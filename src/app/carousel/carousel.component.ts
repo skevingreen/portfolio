@@ -5,6 +5,7 @@
  * Purpose: Provide a carousel to display pictures
  *
  * Credit for carousel code goes to https://github.com/brampeirs/angular-carousel
+ * Pause button adapted from https://css-tricks.com/making-pure-css-playpause-button/
  */
 
 import { Component, Input } from '@angular/core';
@@ -23,6 +24,7 @@ import { CommonModule } from '@angular/common';
           [src]="slide.src"
           class="slide"
           [alt]="slide.alt"
+          (click)="startStopShow()"
         />
       </ng-container>
 
@@ -33,6 +35,12 @@ import { CommonModule } from '@angular/common';
       <button class="control next" (click)="onNextClick()">
         <span class="arrow right"></span>
       </button>
+
+      @if(runShow) {
+        <button class="control pause" (click)="startStopShow()">
+          <span class="pauseButton"></span>
+        </button>
+      }
     </div>
   `,
   styles: [
@@ -52,6 +60,11 @@ import { CommonModule } from '@angular/common';
       margin-right: auto;
     }
 
+    span.pauseButton {
+      position: absolute;
+      left: 300%;
+    }
+
     @media screen and (min-width: 1162px) {
       .carousel {
         position: relative;
@@ -61,6 +74,11 @@ import { CommonModule } from '@angular/common';
         border-radius: 0.5em;
         margin-left: auto;
         margin-right: auto;
+      }
+
+      span.pauseButton {
+        position: absolute;
+        left: 600%;
       }
     }
 
@@ -109,6 +127,16 @@ import { CommonModule } from '@angular/common';
       }
     }
 
+    .pauseButton {
+      width: 74px;
+      height: 32px;
+      border-color: #white;
+      border-style: double;
+      border-width: 0px 0px 0px 37px;
+    }
+
+
+
     /* style the arrows */
     .arrow {
       display: block;
@@ -129,8 +157,9 @@ import { CommonModule } from '@angular/common';
 })
 export class CarouselComponent {
   @Input() slides: any;
-
+  runShow = true;
   currentSlide = 0;
+  intervalID: any;
 
   constructor() {
   }
@@ -143,5 +172,19 @@ export class CarouselComponent {
   onNextClick() {
     const next = this.currentSlide + 1;
     this.currentSlide = next === this.slides.length ? 0 : next;
+  }
+
+  startStopShow() {
+    if(this.runShow) {        //start the show
+      this.runShow = false;   //toggle state so next click will stop show
+      this.intervalID = setInterval(() => this.onNextClick(), 3000);
+    } else {                  //stop the show
+      clearInterval(this.intervalID);
+      this.runShow = true;    //toggle state so next click will start show
+    }
+  }
+
+  ngOnInit() {
+    this.startStopShow();
   }
 }
