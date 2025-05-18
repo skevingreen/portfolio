@@ -32,15 +32,14 @@ import { CommonModule } from '@angular/common';
       <button class="control prev" (click)="onPreviousClick()">
         <span class="arrow left"></span>
       </button>
-      <button class="control next" (click)="onNextClick()">
-        <span class="arrow right"></span>
-      </button>
-
       @if(runShow) {
         <button class="control pause" (click)="startStopShow()">
           <span class="pauseButton"></span>
         </button>
       }
+      <button class="control next" (click)="onNextClick()">
+        <span class="arrow right"></span>
+      </button>
     </div>
   `,
   styles: [
@@ -60,10 +59,12 @@ import { CommonModule } from '@angular/common';
       margin-right: auto;
     }
 
+    /*
     span.pauseButton {
       position: absolute;
       left: 300%;
     }
+    */
 
     @media screen and (min-width: 1162px) {
       .carousel {
@@ -76,9 +77,8 @@ import { CommonModule } from '@angular/common';
         margin-right: auto;
       }
 
-      span.pauseButton {
-        position: absolute;
-        left: 600%;
+      button.control.pause {
+        left: 42%;
       }
     }
 
@@ -122,6 +122,9 @@ import { CommonModule } from '@angular/common';
       &.next {
         right: 0;
       }
+      &.pause {
+        left: 35%;
+      }
       &.prev {
         left: 0;
       }
@@ -135,11 +138,9 @@ import { CommonModule } from '@angular/common';
       border-width: 0px 0px 0px 37px;
     }
 
-
-
     /* style the arrows */
     .arrow {
-      display: block;
+      display: inline;
       border-left: 0.1em solid white;
       border-bottom: 0.1em solid white;
       width: 0.5em;
